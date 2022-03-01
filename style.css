@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --softBlue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --white: hsl(0, 0%, 100%);
+  --main-dark-blue: hsl(217, 54%, 11%);
+  --card-dark-blue: hsl(216, 50%, 16%);
+  --line-dark-blue: hsl(215, 32%, 27%);
+}
+body {
+  height: 100vh;
+  background-color: var(--main-dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card {
+  width: 300px;
+  height: auto;
+  background-color: var(--card-dark-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+.card-header img {
+  width: 270px;
+  height: 270px;
+  margin: 1rem 0;
+  border-radius: 10px;
+}
+.card-body {
+  width: 90%;
+  color: var(--white);
+}
+#description {
+  margin: 0.5rem 0;
+  font-size: 15px;
+  color: var(--softBlue);
+}
+
+.card-footer {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.upper-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  font-size: 13px;
+}
+#ethereum {
+  color: var(--Cyan);
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+#ethereum img {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+  margin-right: 5px;
+}
+#clock {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  color:var(--softBlue);
+}
+
+#clock img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
+.down-footer{
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--line-dark-blue);
+    padding: 1rem 0;
+
+}
+.down-footer img{
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.down-footer p{
+    color: var(--softBlue);
+    font-size: 14px;
+}
+.down-footer span{
+    font-weight: 700;
+    color: var(--white);
+    cursor: pointer;
+}
